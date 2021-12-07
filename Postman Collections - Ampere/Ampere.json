@@ -275,69 +275,70 @@
             },
             {
               "name": "00 - Client Cardentials",
-              "item": [],
-              "id": "e587475c-95c8-48ee-b92b-506b8d054448"
-            },
-            {
-              "name": "ST- Get MTR client credencials",
-              "event": [
+              "item": [
                 {
-                  "listen": "test",
-                  "script": {
-                    "exec": [
-                      "var jsonData = JSON.parse(responseBody);",
-                      "let bearer_token = \"Bearer \".concat(jsonData.access_token);",
-                      "console.log(\"bearer_token = \" + bearer_token);",
-                      "postman.setEnvironmentVariable(\"token\", bearer_token);",
-                      "",
-                      "",
-                      ""
+                  "name": "ST- Get MTR client credencials",
+                  "event": [
+                    {
+                      "listen": "test",
+                      "script": {
+                        "exec": [
+                          "var jsonData = JSON.parse(responseBody);",
+                          "let bearer_token = \"Bearer \".concat(jsonData.access_token);",
+                          "console.log(\"bearer_token = \" + bearer_token);",
+                          "postman.setEnvironmentVariable(\"token\", bearer_token);",
+                          "",
+                          "",
+                          ""
+                        ],
+                        "type": "text/javascript",
+                        "id": "a1c1f36c-012e-4fd4-84da-4144f096c899"
+                      }
+                    }
+                  ],
+                  "id": "20287359-045e-48c4-be62-e30a8a5ba008",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded"
+                      }
                     ],
-                    "type": "text/javascript",
-                    "id": "a1c1f36c-012e-4fd4-84da-4144f096c899"
-                  }
+                    "body": {
+                      "mode": "urlencoded",
+                      "urlencoded": [
+                        {
+                          "key": "grant_type",
+                          "value": "client_credentials",
+                          "type": "text"
+                        },
+                        {
+                          "key": "client_id",
+                          "value": "lithium-metrics-clientcredentials",
+                          "type": "text"
+                        },
+                        {
+                          "key": "client_secret",
+                          "value": "xJRN9LXc2280fT5PseKCGAsADSu06tkR0JoRse9LR8Buzg4ODkHdRabrLhawPGS9MJksx57vxUUHiv+GBrB2MA==",
+                          "type": "text"
+                        },
+                        {
+                          "key": "scope",
+                          "value": "lithium-metrics",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": "https://stg-identity.primaverabss.com/connect/token"
+                  },
+                  "response": []
                 }
               ],
-              "id": "20287359-045e-48c4-be62-e30a8a5ba008",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/x-www-form-urlencoded"
-                  }
-                ],
-                "body": {
-                  "mode": "urlencoded",
-                  "urlencoded": [
-                    {
-                      "key": "grant_type",
-                      "value": "client_credentials",
-                      "type": "text"
-                    },
-                    {
-                      "key": "client_id",
-                      "value": "lithium-metrics-clientcredentials",
-                      "type": "text"
-                    },
-                    {
-                      "key": "client_secret",
-                      "value": "xJRN9LXc2280fT5PseKCGAsADSu06tkR0JoRse9LR8Buzg4ODkHdRabrLhawPGS9MJksx57vxUUHiv+GBrB2MA==",
-                      "type": "text"
-                    },
-                    {
-                      "key": "scope",
-                      "value": "lithium-metrics",
-                      "type": "text"
-                    }
-                  ]
-                },
-                "url": "https://stg-identity.primaverabss.com/connect/token"
-              },
-              "response": []
+              "id": "e587475c-95c8-48ee-b92b-506b8d054448"
             }
           ],
           "id": "c991417a-a6bf-485f-9bdc-73dc1ec9fd3b"
