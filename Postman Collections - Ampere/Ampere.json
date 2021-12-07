@@ -277,7 +277,7 @@
               "name": "00 - Client Cardentials",
               "item": [
                 {
-                  "name": "ST- Get MTR client credencials",
+                  "name": "MTR client credencials",
                   "event": [
                     {
                       "listen": "test",
