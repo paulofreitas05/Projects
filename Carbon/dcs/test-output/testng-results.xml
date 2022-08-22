@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-19T12:48:29 WEST" name="Default suite" finished-at="2022-08-19T12:48:40 WEST" duration-ms="11095">
+    <groups>
+    </groups>
+    <test started-at="2022-08-19T12:48:29 WEST" name="Default test" finished-at="2022-08-19T12:48:40 WEST" duration-ms="11095">
+      <class name="dcs.DataCatalogService">
+        <test-method signature="ReadCatalog()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:29 WEST" name="ReadCatalog" finished-at="2022-08-19T12:48:33 WEST" duration-ms="3829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalog -->
+        <test-method signature="ReadCatalogAddressCodesByDistrict()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:33 WEST" name="ReadCatalogAddressCodesByDistrict" finished-at="2022-08-19T12:48:34 WEST" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalogAddressCodesByDistrict -->
+        <test-method signature="ReadCatalogAddressCodesByDistrict01()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:34 WEST" name="ReadCatalogAddressCodesByDistrict01" finished-at="2022-08-19T12:48:35 WEST" duration-ms="921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalogAddressCodesByDistrict01 -->
+        <test-method signature="ReadCatalogAddressCodesByDistrictNotFound()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:35 WEST" name="ReadCatalogAddressCodesByDistrictNotFound" finished-at="2022-08-19T12:48:36 WEST" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalogAddressCodesByDistrictNotFound -->
+        <test-method signature="ReadCatalogCountries()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:36 WEST" name="ReadCatalogCountries" finished-at="2022-08-19T12:48:37 WEST" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalogCountries -->
+        <test-method signature="ReadCatalogCountriesNotFound()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:37 WEST" name="ReadCatalogCountriesNotFound" finished-at="2022-08-19T12:48:38 WEST" duration-ms="1417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalogCountriesNotFound -->
+        <test-method signature="ReadCatalogCountriesPT()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:38 WEST" name="ReadCatalogCountriesPT" finished-at="2022-08-19T12:48:39 WEST" duration-ms="830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalogCountriesPT -->
+        <test-method signature="ReadCatalogTaxAutServices()[pri:0, instance:dcs.DataCatalogService@4d5b6aac]" started-at="2022-08-19T12:48:39 WEST" name="ReadCatalogTaxAutServices" finished-at="2022-08-19T12:48:40 WEST" duration-ms="987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadCatalogTaxAutServices -->
+      </class> <!-- dcs.DataCatalogService -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
