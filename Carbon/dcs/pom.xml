@@ -3,10 +3,19 @@
 	<groupId>dcs</groupId>
 	<artifactId>dcs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties>
-     		<maven.compiler.source>14</maven.compiler.source>
-	        <maven.compiler.target>14</maven.compiler.target>
-	</properties>
+	
+	<!--Begin Joel-->
+	<build>
+		<plugins>
+			<plugin> 
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version> 
+			</plugin>
+		</plugins>
+	</build>
+	<!--End Joel-->
+
 	<dependencies>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
